@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import { Button } from '../components/UI';
+import CarRightImage from '/assets/CarRight.png';
+import CarLeftImage from '/assets/CarLeft.png';
+import CarFrontImage from '/assets/CarFront.png';
+import CarBackImage from '/assets/CarBack.png';
 
 const HowItWorksPage: FC = () => {
   return (
@@ -42,7 +46,7 @@ const HowItWorksPage: FC = () => {
               </div>
               <div className="order-1 md:order-2">
                 <img 
-                  src="/assets/CarRight.png" 
+                  src={CarRightImage} 
                   alt="Upload photos" 
                   className="rounded-lg shadow-lg" 
                 />
@@ -59,7 +63,7 @@ const HowItWorksPage: FC = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center mb-16">
               <div>
                 <img 
-                  src="/assets/CarLeft.png" 
+                  src={CarLeftImage} 
                   alt="AI analysis" 
                   className="rounded-lg shadow-lg" 
                 />
@@ -110,7 +114,7 @@ const HowItWorksPage: FC = () => {
               </div>
               <div className="order-1 md:order-2">
                 <img 
-                  src="/assets/CarFront.png" 
+                  src={CarFrontImage} 
                   alt="Damage report" 
                   className="rounded-lg shadow-lg" 
                 />
@@ -127,7 +131,7 @@ const HowItWorksPage: FC = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img 
-                  src="/assets/CarBack.png" 
+                  src={CarBackImage} 
                   alt="Repair estimate" 
                   className="rounded-lg shadow-lg" 
                 />

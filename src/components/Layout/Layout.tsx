@@ -1,6 +1,7 @@
 import { type FC, type PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import LogoImage from '/assets/Logo.png';
 
 interface LayoutProps extends PropsWithChildren {
   showHeader?: boolean;
@@ -23,7 +24,7 @@ const Layout: FC<LayoutProps> = ({
         >
           <div className="container mx-auto px-4 flex justify-between items-center">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/assets/Logo.png" alt="AutoCheck AI" className="h-8" />
+              <img src={LogoImage} alt="AutoCheck AI" className="h-8" />
               <span className="text-xl font-semibold text-primary-500">AutoCheck AI</span>
             </Link>            <nav className="flex gap-6">
               <Link to="/" className="text-gray-600 hover:text-primary-500 transition-colors duration-200">О сервисе</Link>
@@ -55,7 +56,7 @@ const Layout: FC<LayoutProps> = ({
         >          <div className="container mx-auto px-4">
             <div className="flex justify-center items-center">
               <div className="flex items-center gap-2">
-                <img src="/assets/Logo.png" alt="AutoCheck AI" className="h-6" />
+                <img src={LogoImage} alt="AutoCheck AI" className="h-6" />
                 <span className="text-sm text-gray-600">© {new Date().getFullYear()} AutoCheck AI</span>
               </div>
             </div>

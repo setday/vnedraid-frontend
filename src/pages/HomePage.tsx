@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 import { Button } from '../components/UI';
+import HeroImage from '/assets/Hero.png';
 
 const HomePage: FC = () => {
   return (
@@ -32,9 +33,8 @@ const HomePage: FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative"
-          >
-            <img
-              src="/assets/Hero.png"
+          >            <img
+              src={HeroImage}
               alt="Car damage analysis"
               className="rounded-lg shadow-lg"
             />
