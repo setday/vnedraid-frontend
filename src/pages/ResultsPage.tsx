@@ -1,9 +1,8 @@
-import { FC, useEffect, useState } from 'react';
+import { type FC, useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Layout from '../components/Layout';
 import { Button, useError, PageTransition, containerVariants, itemVariants } from '../components/UI';
-import apiService from '../api/apiService';
 import type { Damage, RepairCostEstimateResponse } from '../types/api.types';
 
 const ResultsPage: FC = () => {

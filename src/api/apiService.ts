@@ -27,7 +27,6 @@ class ApiService {
       }
     );
   }
-
   /**
    * Upload car photos
    * @param files - The car photo files to upload
@@ -35,7 +34,7 @@ class ApiService {
    */
   async uploadPhotos(
     files: File[],
-    onUploadProgress?: (progressEvent: ProgressEvent) => void
+    onUploadProgress?: (progressEvent: any) => void
   ): Promise<AxiosResponse> {
     const formData = new FormData();
     

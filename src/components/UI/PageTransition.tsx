@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { type FC, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
 // Page transition variants

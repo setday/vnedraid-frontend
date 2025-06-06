@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from 'react';
+import { type FC, type PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
