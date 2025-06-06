@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { type FC, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Layout from '../components/Layout';
@@ -182,12 +182,12 @@ const UploadPage: FC = () => {
                         </svg>
                       </button>
                     </div>
-                  ) : (
-                    <FileUpload
-                      onFilesAccepted={(files) => handleFileChange('front', files)}
+                  ) : (                    <FileUpload
+                      onFilesAccepted={(files: File[]) => handleFileChange('front', files)}
                       maxFiles={1}
                       label="Перетащите сюда фото"
                       hint="или"
+                      showCamera={true}
                     />
                   )}
                 </div>
@@ -222,12 +222,12 @@ const UploadPage: FC = () => {
                         </svg>
                       </button>
                     </div>
-                  ) : (
-                    <FileUpload
-                      onFilesAccepted={(files) => handleFileChange('back', files)}
+                  ) : (                    <FileUpload
+                      onFilesAccepted={(files: File[]) => handleFileChange('back', files)}
                       maxFiles={1}
                       label="Перетащите сюда фото"
                       hint="или"
+                      showCamera={true}
                     />
                   )}
                 </div>
@@ -262,12 +262,12 @@ const UploadPage: FC = () => {
                         </svg>
                       </button>
                     </div>
-                  ) : (
-                    <FileUpload
-                      onFilesAccepted={(files) => handleFileChange('left', files)}
+                  ) : (                    <FileUpload
+                      onFilesAccepted={(files: File[]) => handleFileChange('left', files)}
                       maxFiles={1}
                       label="Перетащите сюда фото"
                       hint="или"
+                      showCamera={true}
                     />
                   )}
                 </div>
@@ -302,12 +302,12 @@ const UploadPage: FC = () => {
                         </svg>
                       </button>
                     </div>
-                  ) : (
-                    <FileUpload
-                      onFilesAccepted={(files) => handleFileChange('right', files)}
+                  ) : (                    <FileUpload
+                      onFilesAccepted={(files: File[]) => handleFileChange('right', files)}
                       maxFiles={1}
                       label="Перетащите сюда фото"
                       hint="или"
+                      showCamera={true}
                     />
                   )}
                 </div>                <div className="md:col-span-2">
@@ -346,12 +346,12 @@ const UploadPage: FC = () => {
                       ))}
                     </div>
                   )}
-                  
-                  <FileUpload
-                    onFilesAccepted={(files) => handleFileChange('other_photos', files)}
+                    <FileUpload
+                    onFilesAccepted={(files: File[]) => handleFileChange('other_photos', files)}
                     maxFiles={5}
                     label="Перетащите сюда фото"
                     hint="или"
+                    showCamera={true}
                   />
                 </div>
 

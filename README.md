@@ -37,7 +37,7 @@ AutoCheck AI is a web application that allows users to automatically evaluate ca
 1. Clone the repository
    ```bash
    git clone <repository-url>
-   cd vnedreid-frontend
+   cd vnedraid-frontend
    ```
 
 2. Install dependencies
@@ -78,7 +78,7 @@ Since the backend API is not available during development, this documentation se
 ## Project Structure
 
 ```
-vnedreid-frontend/
+vnedraid-frontend/
 ├── public/              # Public assets
 ├── src/
 │   ├── api/             # API services and documentation
